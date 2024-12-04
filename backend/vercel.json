@@ -2,18 +2,19 @@
     "version": 2,
     "builds": [
       {
-        "src": "backend/package.json",
+        "src": "index.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/backend/$1"
+        "dest": "/index.js"
       }
     ],
     "env": {
       "MONGO_URI": "mongodb+srv://alpha:12345@cluster0.ngen05o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    }
+    },
+    "ignoreCommand": "git check-ignore -v"
   }
   

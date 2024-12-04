@@ -1,7 +1,7 @@
 const Expense = require('../models/Expense');
 const logger = require('../utils/logger');
 
-// Get all expenses for the logged-in user
+// get all expence
 exports.getExpenses = async (req, res) => {
   try {
     const expenses = await Expense.find({ user: req.user._id }).sort({ createdAt: -1 });
@@ -12,7 +12,7 @@ exports.getExpenses = async (req, res) => {
   }
 };
 
-// Add a new expense
+// add new expense
 exports.addExpense = async (req, res) => {
   const { amount, category, description } = req.body;
 
@@ -32,7 +32,7 @@ exports.addExpense = async (req, res) => {
   }
 };
 
-// Update an existing expense
+// Update 
 exports.updateExpense = async (req, res) => {
   const { amount, category, description } = req.body;
 
@@ -56,7 +56,7 @@ exports.updateExpense = async (req, res) => {
   }
 };
 
-// Delete an expense
+// Delete
 exports.deleteExpense = async (req, res) => {
   try {
     const expense = await Expense.findById(req.params.id);
