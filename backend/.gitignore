@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+.docker/
+
+# Docker-specific files
+docker-compose.override.yml
+
+# MongoDB data
+mongo-data/
+
+# Temporary files
+*.tmp
+*.swp
+*.cache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test coverage output
+coverage/
+
+# Debugger config files
+*.launch
+
+# Miscellaneous
+*.bak
+*.old
