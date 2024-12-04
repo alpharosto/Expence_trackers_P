@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "backend/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/backend/$1"
+      }
+    ],
+    "env": {
+      "MONGO_URI": "mongodb+srv://alpha:12345@cluster0.ngen05o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  }
+  
