@@ -14,7 +14,7 @@
     ],
     "env": {
       "MONGO_URI": "mongodb+srv://alpha:12345@cluster0.ngen05o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    },
-    "ignoreCommand": "git check-ignore -v"
+    }
+    
   }
   
